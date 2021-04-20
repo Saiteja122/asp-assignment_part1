@@ -8,7 +8,7 @@
     ViewData["Title"] = "Home page";
 }
 
-@if (SignInManager.IsSignedIn(User))
+@if (!SignInManager.IsSignedIn(User))
 {
 <div class="row">
     <div class="col-md-6">
